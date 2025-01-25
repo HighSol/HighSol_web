@@ -4,7 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #222; /* Cambiado para mayor contraste general */
+    background-image: url('images.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
@@ -31,8 +35,11 @@ nav ul li a {
 
 section {
     padding: 2rem;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
     margin: 2rem 0;
+    color: #333; /* Texto oscuro para mayor contraste */
+    border-radius: 8px; /* Bordes redondeados para diseño moderno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras ligeras para destacar las secciones */
 }
 
 button {
@@ -41,17 +48,38 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-body {
-    background-image: url('images.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+nav ul li .button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+nav ul li .button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.whitepaper {
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    color: #333; 
+    margin: 2rem auto; 
+    max-width: 1200px; 
 }
 
 footer {
